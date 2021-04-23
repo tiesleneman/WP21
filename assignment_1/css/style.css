@@ -1,0 +1,13 @@
+footer {
+    padding: 20px;
+    background-color: #ECEDEE;
+}
+
+article {
+    margin: 50px 0 50px 0;
+}
+
+
+if (document.URL.includes("index.html") {
+    document.title = "Webprogramming (LIX018P05) - Index";
+}
