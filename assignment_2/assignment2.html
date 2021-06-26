@@ -13,6 +13,7 @@
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <script type="application/javascript" src="js/main.js"></script>
+    <script type="application/javascript" src="js/links.js"></script>
 </head>
 <body>
 <header>
@@ -29,34 +30,38 @@
     <div class="row wp-row">
         <div class="col-md-6">
             <h1>Contact Form</h1>
+
             <p>Please enter your name, age, city, Email address and phone number. We'll contact you for more information.</p>
             <div class="alert alert-danger" id="form-alert" role="alert">
                 Not all form fields are filled in!
             </div>
             <form>
                 <div class="form-group">
-                    <label for="name">name</label>
-                    <input type="text" class="form-control">
+                    <label for="inputName">Name</label>
+                    <input type="name" class="form-control" id="inputName" placeholder="Name">
                 </div>
                 <div class="form-group">
-                    <label for="age">age</label>
-                    <input type="number" class="form-control">
+                    <label for="inputAge">Age</label>
+                    <input type="age" class="form-control" id="inputAge" placeholder="Age">
                 </div>
                 <div class="form-group">
-                    <label for="city">city</label>
-                    <input type="text" class="form-control">
+                    <label for="inputCity">City</label>
+                    <input type="city" class="form-control" id="inputCity" placeholder="City">
                 </div>
                 <div class="form-group">
-                    <label for="email">email</label>
-                    <input type="email" class="form-control">
+                    <label for="inputEmail">Email address</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
                 </div>
                 <div class="form-group">
-                    <label for="phonenumber">phonenumber</label>
-                    <input type="number" class="form-control">
+                    <label for="inputPhone">Phone number</label>
+                    <input type="phone" class="form-control" id="inputPhone" placeholder="Phone">
                 </div>
-                <button id="submit-form">Submit</button>
-                <button onclick="erase()">Erase</button>
+
+                <button class="btn btn-primary" id="submit" type="button">Submit</button>
+                <button class="btn btn-primary" id="erase" type="button">Erase</button>
             </form>
+
+        </div>
         </div>
         <div class="col-md-6">
             <div id="form-content">
@@ -103,20 +108,20 @@
     <div class="tab-content" id="myTabContent">
         <div class="tab-pane active" id="links">
             <ul>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#">Link 3</a></li>
-                <li><a href="#">Link 4</a></li>
+                <li><a href="https://www.google.com/">Google</a></li>
+                <li><a href="https://www.youtube.com/">Youtube</a></li>
+                <li><a href="https://www.facebook.com/">Facebook</a></li>
+                <li><a href="https://github.com/">Github</a></li>
             </ul>
         </div>
         <div class="tab-pane" id="contact">
             <p>
-                Address 1<br>
-                1111 ZZ Place<br>
-                Country
+                Westerbinnensingel 1<br>
+                9718 BR Groningen<br>
+                The Netherlands
             </p>
         </div>
     </div>
 </footer>
 </body>
-</html>
+</html
